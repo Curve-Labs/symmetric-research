@@ -10,7 +10,10 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "contracts": "yarn workspace contracts",
+    "create:stable:pool": "sh scripts/deploy_stable_pool_celo.sh",
+    "deploy:test:tokens": "sh scripts/deploy_tokens_celo.sh"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
