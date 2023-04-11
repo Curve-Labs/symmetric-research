@@ -11,7 +11,7 @@ import {
   token2,
   amount1,
   amount2,
-} from "../inputs/contants";
+} from "../inputs/STABLE_POOL";
 import { LogDescription } from "ethers/lib/utils";
 import promptSync from "prompt-sync";
 import {
