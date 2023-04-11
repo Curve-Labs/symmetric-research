@@ -1,5 +1,5 @@
 echo "Deploying stable pool";
-echo "Confirm that you have verified parameters at ./apps/contracts/inputs/contants.ts file";
+echo "Confirm that you have verified parameters at ./apps/contracts/inputs/STABLE_POOL.ts file";
 read CONFIRMATION
 echo "Thanks for confirming!"
 
@@ -9,9 +9,5 @@ read ENV_CONFIRMATION
 echo "Installing dependencies"
 yarn install
 
-cd apps/contracts
-
 echo "Deploying Stable pool"
 yarn hardhat createStablePool --network celo
-
-cd ../..
