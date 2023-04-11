@@ -5,7 +5,7 @@ Ensure you have read `contracts` workspace docs at `./apps/contracts/README.md`.
 
 Run command:
 ```
-yarn create:stable:pool
+sh scripts/deploy_stable_pool_celo.sh
 ```
 
 ## Get Test Tokens
@@ -13,5 +13,5 @@ Ensure you have read `contracts` workspace docs at `./apps/contracts/README.md`.
 
 Run command:
 ```
-yarn deploy:test:tokens
+sh scripts/deploy_tokens_celo.sh
 ```

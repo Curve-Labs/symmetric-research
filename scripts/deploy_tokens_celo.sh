@@ -6,5 +6,9 @@ read ENV_CONFIRMATION
 echo "Installing dependencies"
 yarn install
 
+cd apps/contracts
+
 echo "Deploying 2 Test Tokens"
-yarn contracts hardhat deploy --network celo -- tags TestTokens
+yarn hardhat deploy --network celo -- tags TestTokens
+
+cd ../..

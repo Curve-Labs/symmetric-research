@@ -9,5 +9,9 @@ read ENV_CONFIRMATION
 echo "Installing dependencies"
 yarn install
 
+cd apps/contracts
+
 echo "Deploying Stable pool"
-yarn contracts hardhat createStablePool --network celo
+yarn hardhat createStablePool --network celo
+
+cd ../..
