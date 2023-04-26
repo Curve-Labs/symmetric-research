@@ -23,9 +23,11 @@ import { BigNumberish } from "ethers";
 import { Address } from "hardhat-deploy/dist/types";
 import getAllowance from "../utils/getAllowance";
 import updateAllowance from "../utils/updateAllowance";
+import indexVolumeAndFees from "./indexVolumeAndFees";
 
 const prompt = promptSync();
 
+const poolId = "0xfe4a8b11fd4735e96454b056cf6422aacad1c88000020000000000000000001b"
 const stablePoolFactoryAddress = "0x7dF194500b8b8dcFe6A0b8E412f8a166c89Bf255";
 const vaultAddress = "0xD25E02047E76b688445ab154785F2642c6fe3f73";
 const wethAddress = "0x122013fd7dF1C6F636a5bb8f03108E876548b455";
@@ -222,3 +224,7 @@ async function createStablePool({}, hre: HardhatRuntimeEnvironment) {
 task("createStablePool", "Create a new stable pool").setAction(
   createStablePool
 );
+
+task("indexVolume", "Index Volume and Fees").setAction(async () => {
+  await indexVolumeAndFees(poolId);
+})
