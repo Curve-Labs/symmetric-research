@@ -7,4 +7,4 @@ echo "Installing dependencies"
 yarn install
 
 echo "Deploying 2 Test Tokens"
-yarn hardhat deploy --network celo --tags TestTokens
+yarn contracts hardhat deploy --network celo --tags TestTokens

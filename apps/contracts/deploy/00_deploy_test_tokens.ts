@@ -4,8 +4,8 @@ const deployFunction: DeployFunction = async (hre) =>  {
     const {ethers, deployments} = hre;
     const {deploy} = deployments;
     const [signer] = await ethers.getSigners();
-    const name = "TestToken";
-    const symbol = "TT";
+    const name = "Kolektivo Guilder";
+    const symbol = "kGuilder";
 
     const {address: token1Address} = await deploy("TestToken", {
         from: signer.address,

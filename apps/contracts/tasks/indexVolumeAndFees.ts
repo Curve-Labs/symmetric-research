@@ -107,7 +107,7 @@ async function indexVolumeAndFees(_poolId: BytesLike) {
       };
       // if the token is cUSD, set the price to 1
       if (element === cUSDAddress) {
-        tokenPrice[element] = 1;
+        tokenPrice[element] = "1";
         return;
       }
       const data = await client.request(priceQuery, priceVariable);

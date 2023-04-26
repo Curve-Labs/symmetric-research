@@ -3008,6 +3008,7 @@ __metadata:
     chai: ^4.2.0
     dotenv: ^16.0.3
     ethers: 5.4.7
+    graphql: ^16.6.0
     graphql-request: ^6.0.0
     hardhat: ^2.13.1
     hardhat-deploy: ^0.11.26
@@ -4832,6 +4833,13 @@ __metadata:
   peerDependencies:
     graphql: 14 - 16
   checksum: e3acc6267c3d25d6dea7144823b3552c3533489269272e651e2a16c45575ccb357bb1dd3c78c1b6c379d4080377bc5694f589bd681d822c9647f6b1736239428
+  languageName: node
+  linkType: hard
+
+"graphql@npm:^16.6.0":
+  version: 16.6.0
+  resolution: "graphql@npm:16.6.0"
+  checksum: bf1d9e3c1938ce3c1a81e909bd3ead1ae4707c577f91cff1ca2eca474bfbc7873d5d7b942e1e9777ff5a8304421dba57a4b76d7a29eb19de8711cb70e3c2415e
   languageName: node
   linkType: hard
 
