@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-deploy";
 import "./tasks/createStablePool";
+import "./tasks/createWeightedPool";
 dotenv.config();
 
 const {
